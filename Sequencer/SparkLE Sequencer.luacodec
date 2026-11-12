@@ -1,0 +1,21 @@
+version={1,0,0}
+
+function remote_supported_control_surfaces()
+	local surfaces =
+		{
+			{
+				manufacturer="Arturia",
+				model="SparkLE Sequencer",
+				source="SparkLE Sequencer.lua",
+				picture="SparkLE Sequencer.png",
+				in_ports={
+					{description="Input"}
+					},
+				out_ports={
+					{description="Output"}
+					},
+				setup_info_text="To use the SparkLE with Remote, keep it in native 'Spark' mode i.e. don't use the 'MIDI' mode. Press simultaneously buttons 'Filter'+'Slicer'+'Roller' to toggle controller modes."
+			},
+		}
+	return surfaces
+end

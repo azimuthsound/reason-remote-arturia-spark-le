@@ -1,0 +1,44 @@
+Propellerhead Remote Mapping File
+File Format Version	1.0.0
+Control Surface Manufacturer	Arturia
+Control Surface Model	SparkLE Instrument
+Map Version	1.0.0
+
+
+// ABL3
+// ______________
+
+Scope	AudioRealism	se.audiorealism.abl3
+
+Map	Tempo Encoder		Cutoff
+Map	Volume Encoder		Resonance
+Map	Encoder P1		Envmod
+Map	Encoder P2		Decay
+Map	Encoder P3		Accent
+
+
+// ABL2
+// ______________
+
+Scope	AudioRealism	se.audiorealism.reabl2			
+
+Map	Tempo Encoder		Cutoff
+Map	Volume Encoder		Resonance
+Map	Encoder P1		Envmod
+Map	Encoder P2		Decay
+Map	Encoder P3		Accent
+
+
+
+// COMBINATOR
+// ______________
+
+Scope	Propellerheads	Combinator
+
+Map	Tempo Encoder		Rotary 1
+Map	Volume Encoder		Rotary 2
+Map	Encoder P1		Rotary 3
+Map	Encoder P2		Rotary 4
+
+
+

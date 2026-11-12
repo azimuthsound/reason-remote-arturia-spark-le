@@ -1,0 +1,416 @@
+Propellerhead Remote Mapping File
+File Format Version	1.0.0
+Control Surface Manufacturer	Arturia
+Control Surface Model	SparkLE Sequencer
+Map Version	1.0.0
+
+
+
+Scope	Propellerheads	Reason Document			
+//Define Group	DialMode	ProjMode	KitMode	InstrMode
+ Define Group	PadMode	PadToggleOff	PadToggleOn
+Define Group	SelectState	SelectOff	SelectOn
+
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+
+Map	Global Filter Button		Reset Automation Override
+
+Map	Select Button		SelectState=SelectOn
+Map	Select Button Light		0					SelectOff
+Map	Select Button Light		1					SelectOn
+
+Map	Bars Display		Beat Position
+
+Map	Stop Button		Stop					SelectOn
+Map	Stop Button		Stop					SelectOff
+Map	Stop Release		Goto Left Locator					SelectOn
+Map	Stop Release		Return To Zero					SelectOff
+
+Map	PausePlay Button		Play					SelectOn
+Map	PausePlay Button		Play					SelectOff
+
+Map	Record Button		Record					SelectOn
+Map	Record Button		Record					SelectOff
+
+
+
+// REDRUM
+// ______________
+
+
+Scope	Propellerheads	Redrum Drum Computer	
+	
+// GROUPS
+
+Define Group	DialMode	ProjMode	KitMode	InstrMode
+Define Group	StepMode		SeqMode	PattMode	TuneMode	BankMode	SelectOn	MuteMode	SoloMode
+
+// Dial Group Select
+
+Map	Proj Button		DialMode=ProjMode
+Map	Kit Button		DialMode=KitMode
+Map	Instr Button		DialMode=InstrMode
+
+// Step Mode modes
+
+Map	Bank Button		StepMode=BankMode
+Map	Patt Button		StepMode=PattMode
+Map	Seq Button		StepMode=SeqMode
+Map	Tune Button		StepMode=TuneMode
+
+Map	Mute Button		StepMode=MuteMode
+Map	Solo Button		StepMode=SoloMode
+
+Map	Select Button		StepMode=SelectOn
+
+Map	Select Button		StepMode=SelectOn					TuneMode
+Map	Select Button		StepMode=SelectOn					PattMode
+Map	Select Button		StepMode=SelectOn					SeqMode
+Map	Select Button		StepMode=SelectOn					BankMode
+Map	Select Button		StepMode=SelectOn					MuteMode
+Map	Select Button		StepMode=SelectOn					SoloMode
+
+Map	Select Button		StepMode=SeqMode					SelectOn
+
+Map	Select Button Light		1					SelectOn
+Map	Select Button Light		0					TuneMode
+Map	Select Button Light		0					PattMode
+Map	Select Button Light		0					SeqMode
+Map	Select Button Light		0					BankMode
+Map	Select Button Light		0					MuteMode
+Map	Select Button Light		0					SoloMode
+
+
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+
+// Dial
+
+
+
+// General
+
+// Map	Volume Encoder		Master Level
+Map	Loop Button		Shuffle
+Map	Move Encoder		Edit Accent
+Map	Erase Button		Edit Flam
+
+Map	Pattern Previous Button		Previous 16 Remote Start Step				
+Map	Pattern Next Button		Next 16 Remote Start Step				
+
+Map	Divide Encoder		Edit Steps					
+
+Map	Pad 1		Pattern 1
+Map	Pad 2		Pattern 2
+Map	Pad 3		Pattern 3
+Map	Pad 4		Pattern 4
+Map	Pad 5		Pattern 5
+Map	Pad 6		Pattern 6
+Map	Pad 7		Pattern 7
+Map	Pad 8		Pattern 8
+
+
+//SELECT MODE
+
+Map	Dial		Selected Drum					SelectOn
+
+Map	Sequencer Button 1		Select Drum 1					SelectOn
+Map	Sequencer Button 2		Select Drum 2					SelectOn
+Map	Sequencer Button 3		Select Drum 3					SelectOn
+Map	Sequencer Button 4		Select Drum 4					SelectOn
+Map	Sequencer Button 5		Select Drum 5					SelectOn
+Map	Sequencer Button 6		Select Drum 6					SelectOn
+Map	Sequencer Button 7		Select Drum 7					SelectOn
+Map	Sequencer Button 8		Select Drum 8					SelectOn
+Map	Sequencer Button 9		Select Drum 9					SelectOn
+Map	Sequencer Button 10		Select Drum 10					SelectOn
+Map	Sequencer Button 11		0					SelectOn
+Map	Sequencer Button 12		0					SelectOn
+Map	Sequencer Button 13		0					SelectOn
+Map	Sequencer Button 14		0					SelectOn
+Map	Sequencer Button 15		0					SelectOn
+Map	Sequencer Button 16		0					SelectOn
+
+
+//BANK MODE
+
+Map	Sequencer Button 1		Bank A					BankMode
+Map	Sequencer Button 2		Bank B					BankMode
+Map	Sequencer Button 3		Bank C					BankMode
+Map	Sequencer Button 4		Bank D					BankMode
+Map	Sequencer Button 5		0					BankMode
+Map	Sequencer Button 6		0					BankMode
+Map	Sequencer Button 7		0					BankMode
+Map	Sequencer Button 8		0					BankMode
+Map	Sequencer Button 9		0					BankMode
+Map	Sequencer Button 10		0					BankMode
+Map	Sequencer Button 11		0					BankMode
+Map	Sequencer Button 12		0					BankMode
+Map	Sequencer Button 13		0					BankMode
+Map	Sequencer Button 14		0					BankMode
+Map	Sequencer Button 15		0					BankMode
+Map	Sequencer Button 16		0					BankMode
+
+Map	Track Select LED 1		Step 1 Playing					BankMode
+Map	Track Select LED 2		Step 2 Playing					BankMode
+Map	Track Select LED 3		Step 3 Playing					BankMode
+Map	Track Select LED 4		Step 4 Playing					BankMode
+Map	Track Select LED 5		Step 5 Playing					BankMode
+Map	Track Select LED 6		Step 6 Playing					BankMode
+Map	Track Select LED 7		Step 7 Playing					BankMode
+Map	Track Select LED 8		Step 8 Playing					BankMode
+
+
+//PATTERN MODE
+
+Map	Sequencer Button 1		Step 1 Playing					PattMode
+Map	Sequencer Button 2		Step 2 Playing					PattMode
+Map	Sequencer Button 3		Step 3 Playing					PattMode
+Map	Sequencer Button 4		Step 4 Playing					PattMode
+Map	Sequencer Button 5		Step 5 Playing					PattMode
+Map	Sequencer Button 6		Step 6 Playing					PattMode
+Map	Sequencer Button 7		Step 7 Playing					PattMode
+Map	Sequencer Button 8		Step 8 Playing					PattMode
+Map	Sequencer Button 9		Step 9 Playing					PattMode
+Map	Sequencer Button 10		Step 10 Playing					PattMode
+Map	Sequencer Button 11		Step 11 Playing					PattMode
+Map	Sequencer Button 12		Step 12 Playing					PattMode
+Map	Sequencer Button 13		Step 13 Playing					PattMode
+Map	Sequencer Button 14		Step 14 Playing					PattMode
+Map	Sequencer Button 15		Step 15 Playing					PattMode
+Map	Sequencer Button 16		Step 16 Playing					PattMode
+
+
+//SEQ MODE
+
+Map	Sequencer Button 1		Selected Drum Toggle Step 1					SeqMode
+Map	Sequencer Button 2		Selected Drum Toggle Step 2					SeqMode
+Map	Sequencer Button 3		Selected Drum Toggle Step 3					SeqMode
+Map	Sequencer Button 4		Selected Drum Toggle Step 4					SeqMode
+Map	Sequencer Button 5		Selected Drum Toggle Step 5					SeqMode
+Map	Sequencer Button 6		Selected Drum Toggle Step 6					SeqMode
+Map	Sequencer Button 7		Selected Drum Toggle Step 7					SeqMode
+Map	Sequencer Button 8		Selected Drum Toggle Step 8					SeqMode
+Map	Sequencer Button 9		Selected Drum Toggle Step 9					SeqMode
+Map	Sequencer Button 10		Selected Drum Toggle Step 10					SeqMode
+Map	Sequencer Button 11		Selected Drum Toggle Step 11					SeqMode
+Map	Sequencer Button 12		Selected Drum Toggle Step 12					SeqMode
+Map	Sequencer Button 13		Selected Drum Toggle Step 13					SeqMode
+Map	Sequencer Button 14		Selected Drum Toggle Step 14					SeqMode
+Map	Sequencer Button 15		Selected Drum Toggle Step 15					SeqMode
+Map	Sequencer Button 16		Selected Drum Toggle Step 16					SeqMode
+
+Map	Sequencer Light 1		Selected Drum Step Out 1					SeqMode
+Map	Sequencer Light 2		Selected Drum Step Out 2					SeqMode
+Map	Sequencer Light 3		Selected Drum Step Out 3					SeqMode
+Map	Sequencer Light 4		Selected Drum Step Out 4					SeqMode
+Map	Sequencer Light 5		Selected Drum Step Out 5					SeqMode
+Map	Sequencer Light 6		Selected Drum Step Out 6					SeqMode
+Map	Sequencer Light 7		Selected Drum Step Out 7					SeqMode
+Map	Sequencer Light 8		Selected Drum Step Out 8					SeqMode
+Map	Sequencer Light 9		Selected Drum Step Out 9					SeqMode
+Map	Sequencer Light 10		Selected Drum Step Out 10					SeqMode
+Map	Sequencer Light 11		Selected Drum Step Out 11					SeqMode
+Map	Sequencer Light 12		Selected Drum Step Out 12					SeqMode
+Map	Sequencer Light 13		Selected Drum Step Out 13					SeqMode
+Map	Sequencer Light 14		Selected Drum Step Out 14					SeqMode
+Map	Sequencer Light 15		Selected Drum Step Out 15					SeqMode
+Map	Sequencer Light 16		Selected Drum Step Out 16					SeqMode
+
+
+// Map	Track Select LED 1		Step 1 Playing					SeqMode
+// Map	Track Select LED 2		Step 2 Playing					SeqMode
+// Map	Track Select LED 3		Step 3 Playing					SeqMode
+// Map	Track Select LED 4		Step 4 Playing					SeqMode
+// Map	Track Select LED 5		Step 5 Playing					SeqMode
+// Map	Track Select LED 6		Step 6 Playing					SeqMode
+// Map	Track Select LED 7		Step 7 Playing					SeqMode
+// Map	Track Select LED 8		Step 8 Playing					SeqMode
+
+
+//TUNE MODE
+
+Map	Sequencer Button 1		Channel 1 Play					TuneMode
+Map	Sequencer Button 2		Channel 2 Play					TuneMode
+Map	Sequencer Button 3		Channel 3 Play					TuneMode
+Map	Sequencer Button 4		Channel 4 Play					TuneMode
+Map	Sequencer Button 5		Channel 5 Play					TuneMode
+Map	Sequencer Button 6		Channel 6 Play					TuneMode
+Map	Sequencer Button 7		Channel 7 Play					TuneMode
+Map	Sequencer Button 8		Channel 8 Play					TuneMode
+Map	Sequencer Button 9		Channel 9 Play					TuneMode
+Map	Sequencer Button 10		Channel 10 Play					TuneMode
+Map	Sequencer Button 11		0					TuneMode
+Map	Sequencer Button 12		0					TuneMode
+Map	Sequencer Button 13		0					TuneMode
+Map	Sequencer Button 14		0					TuneMode
+Map	Sequencer Button 15		0					TuneMode
+Map	Sequencer Button 16		0					TuneMode
+
+// Map	Track Select LED 1		Step 1 Playing					TuneMode
+// Map	Track Select LED 2		Step 2 Playing					TuneMode
+// Map	Track Select LED 3		Step 3 Playing					TuneMode
+// Map	Track Select LED 4		Step 4 Playing					TuneMode
+// Map	Track Select LED 5		Step 5 Playing					TuneMode
+// Map	Track Select LED 6		Step 6 Playing					TuneMode
+// Map	Track Select LED 7		Step 7 Playing					TuneMode
+// Map	Track Select LED 8		Step 8 Playing					TuneMode
+
+
+//MUTE MODE
+
+Map	Sequencer Button 1		Drum 1 Mute					MuteMode
+Map	Sequencer Button 2		Drum 2 Mute					MuteMode
+Map	Sequencer Button 3		Drum 3 Mute					MuteMode
+Map	Sequencer Button 4		Drum 4 Mute					MuteMode
+Map	Sequencer Button 5		Drum 5 Mute					MuteMode
+Map	Sequencer Button 6		Drum 6 Mute					MuteMode
+Map	Sequencer Button 7		Drum 7 Mute					MuteMode
+Map	Sequencer Button 8		Drum 8 Mute					MuteMode
+Map	Sequencer Button 9		Drum 9 Mute					MuteMode
+Map	Sequencer Button 10		Drum 10 Mute					MuteMode
+Map	Sequencer Button 11		0					MuteMode
+Map	Sequencer Button 12		0					MuteMode
+Map	Sequencer Button 13		0					MuteMode
+Map	Sequencer Button 14		0					MuteMode
+Map	Sequencer Button 15		0					MuteMode
+Map	Sequencer Button 16		0					MuteMode
+
+// Map	Track Select LED 1		Step 1 Playing					MuteMode
+// Map	Track Select LED 2		Step 2 Playing					MuteMode
+// Map	Track Select LED 3		Step 3 Playing					MuteMode
+// Map	Track Select LED 4		Step 4 Playing					MuteMode
+// Map	Track Select LED 5		Step 5 Playing					MuteMode
+// Map	Track Select LED 6		Step 6 Playing					MuteMode
+// Map	Track Select LED 7		Step 7 Playing					MuteMode
+// Map	Track Select LED 8		Step 8 Playing					MuteMode
+
+
+//SOLO MODE
+
+Map	Sequencer Button 1		Drum 1 Solo					SoloMode
+Map	Sequencer Button 2		Drum 2 Solo					SoloMode
+Map	Sequencer Button 3		Drum 3 Solo					SoloMode
+Map	Sequencer Button 4		Drum 4 Solo					SoloMode
+Map	Sequencer Button 5		Drum 5 Solo					SoloMode
+Map	Sequencer Button 6		Drum 6 Solo					SoloMode
+Map	Sequencer Button 7		Drum 7 Solo					SoloMode
+Map	Sequencer Button 8		Drum 8 Solo					SoloMode
+Map	Sequencer Button 9		Drum 9 Solo					SoloMode
+Map	Sequencer Button 10		Drum 10 Solo					SoloMode
+Map	Sequencer Button 11		0					SoloMode
+Map	Sequencer Button 12		0					SoloMode
+Map	Sequencer Button 13		0					SoloMode
+Map	Sequencer Button 14		0					SoloMode
+Map	Sequencer Button 15		0					SoloMode
+Map	Sequencer Button 16		0					SoloMode
+
+// Map	Track Select LED 1		Step 1 Playing					SoloMode
+// Map	Track Select LED 2		Step 2 Playing					SoloMode
+// Map	Track Select LED 3		Step 3 Playing					SoloMode
+// Map	Track Select LED 4		Step 4 Playing					SoloMode
+// Map	Track Select LED 5		Step 5 Playing					SoloMode
+// Map	Track Select LED 6		Step 6 Playing					SoloMode
+// Map	Track Select LED 7		Step 7 Playing					SoloMode
+// Map	Track Select LED 8		Step 8 Playing					SoloMode
+
+
+// MATRIX
+// ______________
+
+Scope	Propellerheads	Matrix Pattern Sequencer
+
+Map	Sequencer Button 1		Bank A					
+Map	Sequencer Button 2		Bank B					
+Map	Sequencer Button 3		Bank C					
+Map	Sequencer Button 4		Bank D					
+
+Map	Pad 1		Pattern 1			
+Map	Pad 2		Pattern 2			
+Map	Pad 3		Pattern 3			
+Map	Pad 4		Pattern 4			
+Map	Pad 5		Pattern 5		
+Map	Pad 6		Pattern 6		
+Map	Pad 7		Pattern 7		
+Map	Pad 8		Pattern 8		
+
+Map	Dial		Pattern Select
+
+
+
+
+// THOR
+// ______________
+
+Scope	Propellerheads	Thor Polysonic Synthesizer
+
+Define Group	ButtonsMode	SeqMode	PattMode
+
+Map	Patt Button		ButtonsMode=PattMode
+Map	Seq Button		ButtonsMode=SeqMode
+
+
+
+Map	Sequencer Button 1		Pattern Step LED 1					PattMode
+Map	Sequencer Button 2		Pattern Step LED 2					PattMode
+Map	Sequencer Button 3		Pattern Step LED 3					PattMode
+Map	Sequencer Button 4		Pattern Step LED 4					PattMode
+Map	Sequencer Button 5		Pattern Step LED 5					PattMode
+Map	Sequencer Button 6		Pattern Step LED 6					PattMode
+Map	Sequencer Button 7		Pattern Step LED 7					PattMode
+Map	Sequencer Button 8		Pattern Step LED 8					PattMode
+Map	Sequencer Button 9		Pattern Step LED 9					PattMode
+Map	Sequencer Button 10		Pattern Step LED 10					PattMode
+Map	Sequencer Button 11		Pattern Step LED 11					PattMode
+Map	Sequencer Button 12		Pattern Step LED 12					PattMode
+Map	Sequencer Button 13		Pattern Step LED 13					PattMode
+Map	Sequencer Button 14		Pattern Step LED 14					PattMode
+Map	Sequencer Button 15		Pattern Step LED 15					PattMode
+Map	Sequencer Button 16		Pattern Step LED 16					PattMode
+
+Map	Sequencer Button 1		Pattern Step Gate 1					SeqMode
+Map	Sequencer Button 2		Pattern Step Gate 2					SeqMode
+Map	Sequencer Button 3		Pattern Step Gate 3					SeqMode
+Map	Sequencer Button 4		Pattern Step Gate 4					SeqMode
+Map	Sequencer Button 5		Pattern Step Gate 5					SeqMode
+Map	Sequencer Button 6		Pattern Step Gate 6					SeqMode
+Map	Sequencer Button 7		Pattern Step Gate 7					SeqMode
+Map	Sequencer Button 8		Pattern Step Gate 8					SeqMode
+Map	Sequencer Button 9		Pattern Step Gate 9					SeqMode
+Map	Sequencer Button 10		Pattern Step Gate 10					SeqMode
+Map	Sequencer Button 11		Pattern Step Gate 11					SeqMode
+Map	Sequencer Button 12		Pattern Step Gate 12					SeqMode
+Map	Sequencer Button 13		Pattern Step Gate 13					SeqMode
+Map	Sequencer Button 14		Pattern Step Gate 14					SeqMode
+Map	Sequencer Button 15		Pattern Step Gate 15					SeqMode
+Map	Sequencer Button 16		Pattern Step Gate 16					SeqMode
+
+
+// RPG8
+// ______________
+
+Scope	Propellerheads	RPG-8 Monophonic Arpeggiator
+
+Map	Divide Encoder		Pattern Step Count
+Map	Loop Button		Shuffle
+
+Map	Pattern Next Button		Octave Shift Up
+Map	Pattern Previous Button		Octave Shift Down
+
+Map	Dial		Mode
+
+Map	Sequencer Button 1		Pattern Step 1
+Map	Sequencer Button 2		Pattern Step 2
+Map	Sequencer Button 3		Pattern Step 3
+Map	Sequencer Button 4		Pattern Step 4
+Map	Sequencer Button 5		Pattern Step 5
+Map	Sequencer Button 6		Pattern Step 6
+Map	Sequencer Button 7		Pattern Step 7
+Map	Sequencer Button 8		Pattern Step 8
+Map	Sequencer Button 9		Pattern Step 9
+Map	Sequencer Button 10		Pattern Step 10
+Map	Sequencer Button 11		Pattern Step 11
+Map	Sequencer Button 12		Pattern Step 12
+Map	Sequencer Button 13		Pattern Step 13
+Map	Sequencer Button 14		Pattern Step 14
+Map	Sequencer Button 15		Pattern Step 15
+Map	Sequencer Button 16		Pattern Step 16
